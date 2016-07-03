@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>call</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
 <h1>Ajax, a j a x</h1>
@@ -15,6 +16,10 @@
 			success: function(data)
 			{
 				document.getElementById('target').innerHTML="Bye..die";
+			},
+			error: function()
+			{
+				document.getElementById('target').innerHTML="Failed";
 			}
 		});
 		
