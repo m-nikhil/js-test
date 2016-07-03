@@ -9,16 +9,8 @@
 <button onclick="action()">click</button>
 <script type="text/javascript">
 	function action(){
-		$.ajax({
-			type: "GET",
-			url: "https://github.com/m-nikhil/js-test/blob/gh-pages/text.txt",
-			success: function(data)
-			{
-				document.getElementById('target').innerHTML="Bye..die";
-			}
-		})
-		
-	}
+		 $("#target").load("text.txt");
+		}
 </script>
 </body>
 </html>
