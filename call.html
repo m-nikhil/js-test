@@ -11,9 +11,7 @@
 	function action(){
 		$.ajax({
 			type: "GET",
-			dataType: 'jsonp',  //use jsonp data type in order to perform cross domain ajax
-    		crossDomain: true,
-			url: "https://rawgit.com/m-nikhil/js-test/gh-pages/text.txt",
+			url: "https://api.github.com/repos/m-nikhil/js-test",
 			success: function(data)
 			{
 				document.getElementById('target').innerHTML="Bye..die";
