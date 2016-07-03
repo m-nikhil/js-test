@@ -12,10 +12,10 @@
 	function action(){
 		$.ajax({
 			type: "GET",
-			url: "https://api.github.com/repos/m-nikhil/js-test",
+			url: "https://raw.githubusercontent.com/m-nikhil/js-test/gh-pages/text.txt",
 			success: function(data)
 			{
-				document.getElementById('target').innerHTML="Bye..die";
+				document.getElementById('target').innerHTML=data;
 			},
 			error: function()
 			{
