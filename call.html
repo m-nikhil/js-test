@@ -9,7 +9,15 @@
 <button onclick="action()">click</button>
 <script type="text/javascript">
 	function action(){
-		document.getElementById('target').innerHTML="Bye..die";
+		$.ajax({
+			type: "GET",
+			url: "",
+			success: function(data)
+			{
+				document.getElementById('target').innerHTML="Bye..die";
+			}
+		})
+		
 	}
 </script>
 </body>
